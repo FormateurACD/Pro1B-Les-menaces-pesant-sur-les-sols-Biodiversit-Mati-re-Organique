@@ -2907,7 +2907,7 @@
             };
             window.addEventListener('afterprint', restore);
             // Laisse le temps au navigateur d'appliquer les styles d'impression.
-            requestAnimationFrame(() => requestAnimationFrame(() => window.print()));
+            window.print();
         }
 
         function prepareAndPrint() {
